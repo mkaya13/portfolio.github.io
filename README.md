@@ -1,6 +1,6 @@
 # Setup-and-Mobile-First
 
-"Content" and "About Me" pages of the personal portfolio is implemented
+"Main Page", "Content Pages", "About Me" and "Contact Me" pages of the personal portfolio is implemented
 
 ## Live Demo
 
