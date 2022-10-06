@@ -1,5 +1,5 @@
-node_modules
+.prettierignore
 .stylelintrc.json
 package-lock.json
 package.json
-.prettierignore
+node_modules

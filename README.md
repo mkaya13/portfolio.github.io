@@ -2,14 +2,9 @@
 
 "Content" and "About Me" pages of the personal portfolio is implemented
 
-## Live Demo
-
-https://mkaya13.github.io/portfolio.github.io/
-
 ## Built With
 
-- HTML
-- CSS
+- HTML and CSS
 - Linter
 
 ## Getting Started
