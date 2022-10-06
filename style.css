@@ -134,7 +134,6 @@ li.network-icons-list + li.network-icons-list {
 .portfolio {
   height: 100%;
   min-width: 327px;
-  min-height: 320vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -146,8 +145,7 @@ li.network-icons-list + li.network-icons-list {
 
 .portfolio-item {
   width: 100%;
-  max-height: 100vh;
-  min-height: 85vh;
+  max-height: 90vh;
   background-color: white;
   padding: 6%;
   display: inline-block;
