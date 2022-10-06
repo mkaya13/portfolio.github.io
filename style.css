@@ -768,7 +768,7 @@ h5 {
     border-top: 4px solid transparent;
     border-left: 4px solid #e41cf8;
   }
-
+  
   .animation-container .ring:nth-child(3)::before {
     content: "";
     position: absolute;
@@ -779,13 +779,14 @@ h5 {
     width: 15px;
     height: 15px;
     background: #e41cf8;
-    box-shadow:
+    box-shadow: 
       0 0 0 5px #e41cf853,
-      0 0 0 10px #e41cf822
+      0 0 0 10px #e41cf822,
       0 0 0 20px #e41cf811,
       0 0 20px #e41cf8,
       0 0 20px #e41cf8;
   }
+  
 
   .left-side-about-content {
     float: left;
