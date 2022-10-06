@@ -145,13 +145,12 @@ li.network-icons-list + li.network-icons-list {
 
 .portfolio-item {
   width: 100%;
-  max-height: 90vh;
   background-color: white;
   padding: 6%;
   display: inline-block;
   justify-content: center;
   align-content: center;
-}
+} 
 
 .portfolio-item img:hover {
   transition: 0.5s;
@@ -720,8 +719,12 @@ h5 {
     width: 15px;
     height: 15px;
     background: #24ecff;
-    box-shadow: 0 0 0 5px #24ecff53, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11,
-      0 0 20px #24ecff, 0 0 20px #24ecff;
+    box-shadow:
+      0 0 0 5px #24ecff53,
+      0 0 0 10px #24ecff22,
+      0 0 0 20px #24ecff11,
+      0 0 20px #24ecff,
+      0 0 20px #24ecff;
   }
 
   .animation-container .ring:nth-child(2) {
@@ -741,8 +744,12 @@ h5 {
     width: 15px;
     height: 15px;
     background: #93ff2d;
-    box-shadow: 0 0 0 5px #93ff2d53, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11,
-      0 0 20px #93ff2d, 0 0 20px #93ff2d;
+    box-shadow:
+      0 0 0 5px #93ff2d53,
+      0 0 0 10px #93ff2d22,
+      0 0 0 20px #93ff2d11,
+      0 0 20px #93ff2d,
+      0 0 20px #93ff2d;
   }
 
   @keyframes animate2 {
@@ -772,8 +779,12 @@ h5 {
     width: 15px;
     height: 15px;
     background: #e41cf8;
-    box-shadow: 0 0 0 5px #e41cf853, 0 0 0 10px #e41cf822 0 0 0 20px #e41cf811,
-      0 0 20px #e41cf8, 0 0 20px #e41cf8;
+    box-shadow:
+      0 0 0 5px #e41cf853,
+      0 0 0 10px #e41cf822
+      0 0 0 20px #e41cf811,
+      0 0 20px #e41cf8,
+      0 0 20px #e41cf8;
   }
 
   .left-side-about-content {
@@ -848,6 +859,7 @@ h5 {
   .about-me {
     padding-left: 0;
     padding-right: 5%;
+    padding-bottom:200px;
   }
 
   .contact-me-section {
