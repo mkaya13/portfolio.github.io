@@ -12,7 +12,7 @@ body {
 
 .hero {
   width: 100%;
-  min-height: 60vh;
+  min-height: 80vh;
   background: white;
   background-size: 100% 71vh;
   background-image: url("img/background-beginning-mobile.svg");
@@ -748,7 +748,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 490px;
+    padding-left: 530px;
     padding-top: 20px;
   }
 
