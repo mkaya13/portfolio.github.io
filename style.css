@@ -36,7 +36,6 @@ body {
 .card-u-list li {
   padding-top: 7%;
   list-style-type: none;
-  font-family: "Lucida Console", "Courier New", monospace;
   font-size: 16px;
 }
 
@@ -589,11 +588,13 @@ h5 {
     font-size: 32px;
     color: #fff;
     line-height: 44px;
+
   }
 
   .navbar-links {
     width: 100%;
     display: none;
+    z-index:5;
   }
 
   .navbar-links ul {
@@ -621,6 +622,13 @@ h5 {
 
   .hero-logo.active {
     color: white;
+  }
+
+  .hero.active > :not(.hero-nav) {
+    -moz-filter:blur(10px);
+    -o-filter:blur(10px);
+    -webkit-filter:blur(10px);
+    filter: blur(10px);
   }
 }
 
