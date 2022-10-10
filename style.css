@@ -45,13 +45,6 @@ body {
   padding-left: 0;
 }
 
-.about-technologies li {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
 .hero-nav ul li {
   list-style-type: none;
   margin-top: 20px;
@@ -651,6 +644,13 @@ h5 {
     justify-content: space-between;
     padding: 4%;
     padding-top: 2%;
+  }
+
+  .about-technologies li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
 
   .hero-nav ul li {
