@@ -8,7 +8,8 @@ https://mkaya13.github.io/portfolio.github.io/
 
 ## Built With
 
-- HTML and CSS
+- HTML & CSS
+- Javascript
 - Linter
 
 ## Getting Started
