@@ -39,10 +39,6 @@ Through Github
 - Linter test in local:
   `npx stylelint "**/*.{css,scss}"`
 
-### Deployment
-
-- Not deployed yet
-
 ## Authors
 
 👤 **Author1**
