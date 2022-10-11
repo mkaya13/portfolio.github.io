@@ -4,6 +4,15 @@ const backgroundColor = document.getElementsByClassName('hero-nav')[0];
 const hamburgerColor = document.getElementsByClassName('bar')[0];
 const heroLogoColor = document.getElementsByClassName('hero-logo')[0];
 
+const cardContainer = [
+  {
+    title: 'Tonic',
+    SubTitle: ['Back End Dev', 2016],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque porro laborum voluptatum? In quibusdam reiciendis magnam eaque hic, distinctio, error unde quidem consequatur inventore veniam vel doloribus accusamus impedit',
+    languages: ['Ruby on Rails', 'css', 'JavaScript'],
+  }
+]
+
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
   toggleButton.classList.toggle('active');
