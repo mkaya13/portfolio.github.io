@@ -14,7 +14,7 @@ body {
   width: 100%;
   min-height: 80vh;
   background: white;
-  background-size: 100% 71vh;
+  background-size: 100% 100%;
   background-image: url("img/background-beginning-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 75px;
@@ -620,10 +620,6 @@ h5 {
 
   .hero-logo.active {
     color: white;
-  }
-
-  .hero.active > :not(.hero-nav) {
-    filter: blur(10px);
   }
 }
 
