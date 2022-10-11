@@ -10,8 +10,26 @@ const cardContainer = [
     SubTitle: ['Back End Dev', 2016],
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque porro laborum voluptatum? In quibusdam reiciendis magnam eaque hic, distinctio, error unde quidem consequatur inventore veniam vel doloribus accusamus impedit',
     languages: ['Ruby on Rails', 'css', 'JavaScript'],
-  }
-]
+  },
+  {
+    title: 'Tonic',
+    SubTitle: ['Back End Dev', 2016],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque porro laborum voluptatum? In quibusdam reiciendis magnam eaque hic, distinctio, error unde quidem consequatur inventore veniam vel doloribus accusamus impedit',
+    languages: ['Ruby on Rails', 'css', 'JavaScript'],
+  },
+  {
+    title: 'Tonic',
+    SubTitle: ['Back End Dev', 2016],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque porro laborum voluptatum? In quibusdam reiciendis magnam eaque hic, distinctio, error unde quidem consequatur inventore veniam vel doloribus accusamus impedit',
+    languages: ['Ruby on Rails', 'css', 'JavaScript'],
+  },
+  {
+    title: 'Tonic',
+    SubTitle: ['Back End Dev', 2016],
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque porro laborum voluptatum? In quibusdam reiciendis magnam eaque hic, distinctio, error unde quidem consequatur inventore veniam vel doloribus accusamus impedit',
+    languages: ['Ruby on Rails', 'css', 'JavaScript'],
+  },
+];
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
@@ -21,7 +39,7 @@ toggleButton.addEventListener('click', () => {
   heroLogoColor.classList.toggle('active');
 });
 
-document.querySelectorAll('.navbar-links').forEach((n) => {
+document.querySelectorAll('.navbar-links').forEach(n => {
   n.addEventListener('click', () => {
     navbarLinks.classList.remove('active');
     toggleButton.classList.remove('active');
