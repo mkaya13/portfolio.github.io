@@ -31,7 +31,7 @@ Through Github
 
 ### Usage
 
-- Personal Portfolio
+- My Personal Portfolio
 
 ### Run tests
 
