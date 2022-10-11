@@ -8,7 +8,8 @@ https://mkaya13.github.io/portfolio.github.io/
 
 ## Built With
 
-- HTML and CSS
+- HTML & CSS
+- Javascript
 - Linter
 
 ## Getting Started
@@ -37,10 +38,6 @@ Through Github
 - Through Github
 - Linter test in local:
   `npx stylelint "**/*.{css,scss}"`
-
-### Deployment
-
-- Not deployed yet
 
 ## Authors
 
