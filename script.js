@@ -134,7 +134,7 @@ for (let i = 0; i < cardContainer.length; i += 1) {
               <img class="img-popup" src="img/pro-${i + 1}.svg" alt=""> 
             </div>
             <div class="modal-header">
-              <div style="padding-left:20px;">
+              <div style="padding-left:12px;">
                 ${text}
                 ${techUl.outerHTML}
               </div>
