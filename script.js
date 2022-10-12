@@ -120,18 +120,24 @@ for (let i = 0; i < cardContainer.length; i += 1) {
       <div class="modal" style="display:none" id="myModal-${i}">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">   
-            <div class="first-popup-content" style="padding:20px;">
+            <div class="first-popup-content" style="padding:10px;">
+              <div class="modal-header">
               ${title}
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
               <br>
               ${subTitleUl.outerHTML}
               <br>
+              <br>
             </div>
-            <div class="modal-header" style="display:flex; justify-content:center">
+            <div class="modal-header">
               <img class="img-popup" src="img/pro-${i + 1}.svg" alt=""> 
             </div>
-            <div style="padding-left:20px;">
-              ${text}
-              ${techUl.outerHTML}
+            <div class="modal-header">
+              <div style="padding-left:20px;">
+                ${text}
+                ${techUl.outerHTML}
+              </div>
             </div>
             <div class="modal-header" style="display:inline-block" >
               <button class="button-class">
