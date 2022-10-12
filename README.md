@@ -38,6 +38,8 @@ Through Github
 - Through Github
 - Linter test in local:
   `npx stylelint "**/*.{css,scss}"`
+- EsLint test in local:
+  `npx eslint .`
 
 ## Authors
 
