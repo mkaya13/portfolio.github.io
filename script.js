@@ -102,6 +102,7 @@ for (let i = 0; i < cardContainer.length; i += 1) {
     subTitle.appendChild(SubTitleCounter);
     subTitle.textContent = cardContainer[i].SubTitle[k];
 
+    subTitleUl.style = 'margin-left:15px;';
     SubTitleCounter.style = 'padding-right:10px;';
 
     if (counter === 0) {
@@ -125,10 +126,9 @@ for (let i = 0; i < cardContainer.length; i += 1) {
               ${title}
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-              <br>
+              
               ${subTitleUl.outerHTML}
-              <br>
-              <br>
+           
             </div>
             <div class="modal-header">
               <img class="img-popup" src="img/pro-${i + 1}.svg" alt=""> 
@@ -139,14 +139,12 @@ for (let i = 0; i < cardContainer.length; i += 1) {
                 ${techUl.outerHTML}
               </div>
             </div>
-            <div class="modal-header" style="display:inline-block" >
+            <div class="modal-header" style="display:flex; justify-content:center; align-content:center" >
               <button class="button-class">
                 <a href="https://github.com/" target="_blank">
                   See Live <img style ="margin-bottom:3px; height:22px; width:22px;"src="img/live-icon.svg" alt="">
                 </a>
               </button>
-
-              &nbsp;  
 
               <button class="button-class" target="_blank">
                 <a href="https://github.com/">
