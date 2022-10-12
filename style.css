@@ -10,6 +10,14 @@ body {
   background-color: #e5e5e5;
 }
 
+.close {
+  top: -5px;
+  right: -5px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
 .hero {
   width: 100%;
   min-height: 70vh;
@@ -20,6 +28,11 @@ body {
   background-position: 0 75px;
   border-bottom-left-radius: 90px;
   padding-bottom: 15%;
+}
+
+.img-popup {
+  width: 95%;
+  max-height: 400px;
 }
 
 .hero-nav {
@@ -37,6 +50,14 @@ body {
   padding-top: 7%;
   list-style-type: none;
   font-size: 16px;
+}
+
+li.title-element + img {
+  padding-left: 10px;
+}
+
+li.list-element + img {
+  padding-left: 10px;
 }
 
 .project-content-3 li {
@@ -172,7 +193,7 @@ li.network-icons-list + li.network-icons-list {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
-  padding-bottom: 7%;
+  padding-bottom: 4%;
 }
 
 .portfolio-item {
@@ -182,11 +203,6 @@ li.network-icons-list + li.network-icons-list {
   display: inline-block;
   justify-content: center;
   align-content: center;
-}
-
-.portfolio-item img:hover {
-  transition: 0.5s;
-  transform: scale(1.2);
 }
 
 figure.portfolio-item + figure.portfolio-item {
@@ -266,7 +282,7 @@ li.list-element + li.list-element {
 
 li.languages-list + li.languages-list {
   margin-top: 1%;
-  margin-left: 0.8%;
+  margin-left: 5px;
 }
 
 .language-names-mobil {
@@ -576,7 +592,7 @@ h5 {
 
 .copy-right {
   color: white;
-  font-size: 8px;
+  font-size: 12px;
   width: 100%;
   margin: 30px auto;
   text-align: center;
@@ -624,12 +640,24 @@ h5 {
 }
 
 @media (min-width: 768px) {
+  .right-side-picture {
+    float: right;
+    width: 40%;
+    height: 100%;
+  }
+
+  .portfolio-item .right-side-picture:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+
   .toggle-button {
     display: none;
   }
 
   .hero {
-    height: 85vh;
+    min-height: 88vh;
+    max-height: 90vh;
     width: 100%;
     background-size: 100% 80%;
     background-image: url("img/background-beginning-desktop.svg");
@@ -726,16 +754,15 @@ h5 {
     height: 100%;
   }
 
+  .portfolio-item .left-side-picture:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+
   .left-side-content {
     float: left;
     width: 50%;
     padding-left: 1%;
-    height: 100%;
-  }
-
-  .right-side-picture {
-    float: right;
-    width: 40%;
     height: 100%;
   }
 
@@ -747,8 +774,8 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 530px;
-    padding-top: 20px;
+    padding-left: 35%;
+    padding-top: 2%;
   }
 
   .animation-container .ring {
