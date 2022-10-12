@@ -10,6 +10,10 @@ body {
   background-color: #e5e5e5;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .close {
   top: -5px;
   right: -5px;
