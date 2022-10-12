@@ -146,8 +146,8 @@ for (let i = 0; i < cardContainer.length; i += 1) {
                 </a>
               </button>
 
-              <button class="button-class" target="_blank">
-                <a href="https://github.com/">
+              <button class="button-class">
+                <a href="https://github.com/" target="_blank">
                   See Source <img style ="margin-bottom:3px; height:22px; width:22px;"src="img/github-icon.svg" alt="">
                 </a>
               </button>

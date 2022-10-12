@@ -47,7 +47,7 @@ Through Github
 
 - GitHub: [@githubhandle](https://github.com/mkaya13)
 - Twitter: [@twitterhandle](https://twitter.com/mkaya133)
-- LinkedIn: [LinkedIn](https://twitter.com/mkaya133)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mert-kaya-0732b717b/)
 
 ## 🤝 Contributing
 
