@@ -39,7 +39,7 @@ toggleButton.addEventListener('click', () => {
   heroLogoColor.classList.toggle('active');
 });
 
-document.querySelectorAll('.navbar-links').forEach(n => {
+document.querySelectorAll('.navbar-links').forEach((n) => {
   n.addEventListener('click', () => {
     navbarLinks.classList.remove('active');
     toggleButton.classList.remove('active');
@@ -86,3 +86,23 @@ function validateEmail(input, requiredMsg, invalidMsg) {
   }
   return true;
 }
+
+const form = document.querySelector('#signup');
+
+const NAME_REQUIRED = 'Please enter your name';
+const EMAIL_REQUIRED = 'Please enter your email';
+const EMAIL_INVALID = 'Please enter a correct email address format';
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  let nameValid = hasValue(form.elements['name'], NAME_REQUIRED);
+  let emailValid = validateEmail(
+    form.elements['email'],
+    EMAIL_REQUIRED,
+    EMAIL_INVALID
+  );
+  if (nameValid && emailValid) {
+    alert('Demo only. No form was posted.');
+  }
+});
