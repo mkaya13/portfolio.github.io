@@ -38,6 +38,8 @@ Through Github
 - Through Github
 - Linter test in local:
   `npx stylelint "**/*.{css,scss}"`
+- EsLint test in local:
+  `npx eslint .`
 
 ## Authors
 
@@ -45,7 +47,7 @@ Through Github
 
 - GitHub: [@githubhandle](https://github.com/mkaya13)
 - Twitter: [@twitterhandle](https://twitter.com/mkaya133)
-- LinkedIn: [LinkedIn](https://twitter.com/mkaya133)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mert-kaya-0732b717b/)
 
 ## 🤝 Contributing
 
