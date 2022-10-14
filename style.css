@@ -85,10 +85,6 @@ li.title-element + img {
   padding-left: 10px;
 }
 
-li.list-element + img {
-  padding-left: 10px;
-}
-
 .project-content-3 li {
   display: inline;
   padding-left: 0;
