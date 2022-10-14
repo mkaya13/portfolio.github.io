@@ -3,6 +3,8 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const backgroundColor = document.getElementsByClassName('hero-nav')[0];
 const hamburgerColor = document.getElementsByClassName('bar')[0];
 const heroLogoColor = document.getElementsByClassName('hero-logo')[0];
+const emailLetterCheck = document.querySelector('#span-upper-case');
+
 const cardContainer = [
   {
     title: 'Facebook 360',
@@ -157,22 +159,27 @@ for (let i = 0; i < cardContainer.length; i += 1) {
     `;
 }
 
-const form = document.querySelector('#signup');
+const form = document.querySelector('#contact-me');
+const EMAIL_INVALID = 'Please enter your email without uppercase';
+let checkUpperCase;
 
-const NAME_REQUIRED = 'Please enter your name';
-const EMAIL_REQUIRED = 'Please enter your email';
-const EMAIL_INVALID = 'Please enter a correct email address format';
+function validateEmail() {
+  const emailRegex = /[A-Z]/g;
+  const email = form.elements.user_email.value.trim();
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
+  if (emailRegex.test(email)) {
+    return true;
+  }
+  return false;
+}
 
-  let nameValid = hasValue(form.elements['name'], NAME_REQUIRED);
-  let emailValid = validateEmail(
-    form.elements['email'],
-    EMAIL_REQUIRED,
-    EMAIL_INVALID
-  );
-  if (nameValid && emailValid) {
-    alert('Demo only. No form was posted.');
+form.addEventListener('submit', (event) => {
+  checkUpperCase = validateEmail();
+
+  if (checkUpperCase === true) {
+    event.preventDefault();
+    emailLetterCheck.style.display = 'block';
+    emailLetterCheck.innerText = EMAIL_INVALID;
+    emailLetterCheck.classList.toggle('active');
   }
 });
