@@ -3,6 +3,8 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const backgroundColor = document.getElementsByClassName('hero-nav')[0];
 const hamburgerColor = document.getElementsByClassName('bar')[0];
 const heroLogoColor = document.getElementsByClassName('hero-logo')[0];
+const emailLetterCheck = document.querySelector('#span-upper-case');
+
 const cardContainer = [
   {
     title: 'Facebook 360',
@@ -58,7 +60,6 @@ let text;
 let tech;
 let techUl;
 let subTitleUl;
-
 const container = document.querySelectorAll('.container');
 
 for (let i = 0; i < cardContainer.length; i += 1) {
@@ -74,8 +75,6 @@ for (let i = 0; i < cardContainer.length; i += 1) {
   text.textContent = cardContainer[i].text;
   text = text.outerHTML;
 
-  // Add Languages
-
   techUl = document.createElement('ul');
   techUl.classList.add('languages-layout');
 
@@ -85,8 +84,6 @@ for (let i = 0; i < cardContainer.length; i += 1) {
     tech.textContent = cardContainer[i].languages[j];
     techUl.appendChild(tech);
   }
-
-  // Add SubTitle
 
   subTitleUl = document.createElement('ul');
   subTitleUl.classList.add('project-content-3');
@@ -145,16 +142,39 @@ for (let i = 0; i < cardContainer.length; i += 1) {
                   See Live <img style ="margin-bottom:3px; height:22px; width:22px;"src="img/live-icon.svg" alt="">
                 </a>
               </button>
-
               <button class="button-class">
                 <a href="https://github.com/" target="_blank">
                   See Source <img style ="margin-bottom:3px; height:22px; width:22px;"src="img/github-icon.svg" alt="">
                 </a>
               </button>
             </div>
-
           </div>
         </div>
       </div>
     `;
 }
+
+const form = document.querySelector('#contact-me');
+const EMAIL_INVALID = 'Please enter your email without uppercase';
+let checkUpperCase;
+
+function validateEmail() {
+  const emailRegex = /[A-Z]/g;
+  const email = form.elements.user_email.value.trim();
+
+  if (emailRegex.test(email)) {
+    return true;
+  }
+  return false;
+}
+
+form.addEventListener('submit', (event) => {
+  checkUpperCase = validateEmail();
+
+  if (checkUpperCase === true) {
+    event.preventDefault();
+    emailLetterCheck.style.display = 'block';
+    emailLetterCheck.innerText = EMAIL_INVALID;
+    emailLetterCheck.classList.toggle('active');
+  }
+});

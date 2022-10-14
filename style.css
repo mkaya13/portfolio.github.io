@@ -6,6 +6,22 @@
   box-sizing: border-box;
 }
 
+ul.network-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3.8%;
+  padding-right: 5%;
+}
+
+.email-letter-check + .contact-item {
+  margin-top: 2%;
+}
+
+.email-letter-paragraph {
+  padding-left: 100px;
+}
+
 body {
   background-color: #e5e5e5;
 }
@@ -27,8 +43,7 @@ a:link {
 }
 
 .hero {
-  width: 100%;
-  min-height: 70vh;
+  height: 100vh;
   background: white;
   background-size: 100% 80%;
   background-image: url("img/background-beginning-mobile.svg");
@@ -54,17 +69,19 @@ a:link {
   text-decoration: none;
 }
 
+.card-u-list {
+  padding-left: 0;
+}
+
 .card-u-list li {
   padding-top: 7%;
   list-style-type: none;
   font-size: 16px;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 li.title-element + img {
-  padding-left: 10px;
-}
-
-li.list-element + img {
   padding-left: 10px;
 }
 
@@ -169,13 +186,6 @@ li.list-element + img {
   padding-bottom: 4%;
 }
 
-ul.network-icons {
-  display: flex;
-  align-items: center;
-  padding-left: 4%;
-  padding-right: 5%;
-}
-
 li.network-icons-list {
   padding: 0;
   padding-left: 9px;
@@ -189,7 +199,7 @@ li.network-icons-list:hover {
 }
 
 li.network-icons-list + li.network-icons-list {
-  margin-left: 1%;
+  padding-left: 20px;
 }
 
 .portfolio {
@@ -360,12 +370,13 @@ ul.about-network-icons {
   display: flex;
   align-items: center;
   padding-right: 5%;
+  padding-left: 0;
+  margin-left: 0;
 }
 
-ul.card-u-list li a:hover {
-  font-size: 18px;
-  opacity: 0.8;
-  transition: 0.3s;
+ul.about-network-icons li {
+  padding-left: 0;
+  margin-left: 2px;
 }
 
 .about-language-title {
@@ -494,14 +505,15 @@ ul.contact-list {
   text-align: center;
 }
 
-li.contact-items {
-  margin: 0;
-  padding: 0;
-  padding-left: 2%;
-  display: flex;
-  align-items: center;
-  padding-right: 5%;
-  text-align: center;
+#span-upper-case {
+  display: block;
+  margin-top: 2%;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content: center;
+  background-color: red;
+  margin-left: 32%;
+  margin-right: 32%;
 }
 
 #name::placeholder,
@@ -564,7 +576,7 @@ li.contact-item + li.contact-item {
 }
 
 .card {
-  height: 365px;
+  min-height: 400px;
   width: 335px;
   padding: 20px 35px;
   background: #36454f;
@@ -573,6 +585,7 @@ li.contact-item + li.contact-item {
   position: relative;
   overflow: hidden;
   text-align: center;
+  display: flex;
 }
 
 .card i {
@@ -653,6 +666,10 @@ h5 {
 }
 
 @media (min-width: 768px) {
+  ul.network-icons {
+    padding-left: 22.4%;
+  }
+
   .right-side-picture {
     float: right;
     width: 40%;
@@ -669,7 +686,7 @@ h5 {
   }
 
   .hero {
-    min-height: 88vh;
+    min-height: 100vh;
     max-height: 90vh;
     width: 100%;
     background-size: 100% 80%;
@@ -731,12 +748,6 @@ h5 {
     padding-right: 20%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
-  }
-
-  ul.network-icons {
-    display: flex;
-    align-items: center;
-    padding-left: 22.4%;
   }
 
   .languages-layout {
