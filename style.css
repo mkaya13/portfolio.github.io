@@ -89,6 +89,14 @@ li.list-element + img {
   padding-left: 10px;
 }
 
+li.title-element + img {
+  padding-left: 10px;
+}
+
+li.list-element + img {
+  padding-left: 10px;
+}
+
 .project-content-3 li {
   display: inline;
   padding-left: 0;
@@ -691,6 +699,8 @@ h5 {
 
   .hero {
     min-height: 100vh;
+    min-height: 88vh;
+    max-height: 90vh;
     width: 100%;
     background-size: 100% 80%;
     background-image: url("img/background-beginning-desktop.svg");
@@ -802,6 +812,7 @@ h5 {
     justify-content: center;
     align-items: center;
     padding-left: 35%;
+    padding-top: 2%;
   }
 
   .animation-container .ring {

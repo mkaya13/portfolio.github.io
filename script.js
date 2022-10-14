@@ -60,7 +60,6 @@ let text;
 let tech;
 let techUl;
 let subTitleUl;
-
 const container = document.querySelectorAll('.container');
 
 for (let i = 0; i < cardContainer.length; i += 1) {
@@ -76,8 +75,6 @@ for (let i = 0; i < cardContainer.length; i += 1) {
   text.textContent = cardContainer[i].text;
   text = text.outerHTML;
 
-  // Add Languages
-
   techUl = document.createElement('ul');
   techUl.classList.add('languages-layout');
 
@@ -87,8 +84,6 @@ for (let i = 0; i < cardContainer.length; i += 1) {
     tech.textContent = cardContainer[i].languages[j];
     techUl.appendChild(tech);
   }
-
-  // Add SubTitle
 
   subTitleUl = document.createElement('ul');
   subTitleUl.classList.add('project-content-3');
