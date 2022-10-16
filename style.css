@@ -175,6 +175,24 @@ li.title-element + img {
   padding-right: 5%;
 }
 
+.tech-title-size-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding-right: 5px;
+}
+
+.tech-title-size-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding-right: 5px;
+}
+
 .hero-lets-connect {
   font-weight: 500;
   font-size: 16px;
@@ -380,10 +398,8 @@ ul.about-network-icons li {
 }
 
 .about-language-title {
-  display: inline-flex;
-  gap: 145px;
-  padding-top: 5%;
-  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 20px;
 }
 
@@ -443,22 +459,6 @@ li.tech-title-size-2 {
   box-shadow: -2px 2px 0 black;
   margin-top: 6px;
   transform: rotate(-135deg);
-}
-
-.tech-title-size-1 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  gap: 40%;
-}
-
-.tech-title-size-2 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  gap: 40%;
 }
 
 .contact-me-section {
@@ -608,12 +608,14 @@ h5 {
   color: #00ced1;
   padding-top: 10px;
   font-size: 20px;
+  min-height: 60px;
 }
 
 .card-2 {
   color: #ff6347;
   padding-top: 10px;
   font-size: 20px;
+  min-height: 60px;
 }
 
 .copy-right {
@@ -960,22 +962,6 @@ h5 {
   .about-language-title {
     display: inline-flex;
     width: 100%;
-    gap: 50%;
-  }
-
-  .tech-title-size-1 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    gap: 50%;
-  }
-
-  .tech-title-size-2 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100px;
     gap: 50%;
   }
 
