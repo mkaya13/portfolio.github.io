@@ -178,3 +178,47 @@ form.addEventListener('submit', (event) => {
     emailLetterCheck.classList.toggle('active');
   }
 });
+
+// localStorage
+
+const sessionObj = {
+  fullName: '',
+  email: '',
+  textArea: '',
+};
+
+const fullName = document.querySelector('#name');
+const email = document.querySelector('#email');
+const textArea = document.querySelector('#msg');
+let str;
+const storedObj = localStorage.getItem('storedFormData');
+const testValueObj = JSON.parse(storedObj);
+
+if (storedObj !== null) {
+  fullName.value = testValueObj.fullName;
+  email.value = testValueObj.email;
+  textArea.value = testValueObj.textArea;
+}
+
+function stringifier() {
+  str = JSON.stringify(sessionObj);
+  localStorage.setItem('storedFormData', str);
+}
+
+fullName.addEventListener('input', (event) => {
+  sessionObj.fullName = event.target.value;
+  stringifier();
+});
+
+email.addEventListener('input', (event) => {
+  sessionObj.email = event.target.value;
+  stringifier();
+});
+textArea.addEventListener('input', (event) => {
+  sessionObj.textArea = event.target.value;
+  stringifier();
+});
+
+// if (localStorage.test === undefined) {
+//   localStorage.setItem('test', JSON.stringify(sessionObj));
+// }
