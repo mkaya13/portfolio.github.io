@@ -49,8 +49,10 @@ a:link {
   background-image: url("img/background-beginning-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 75px;
-  border-bottom-left-radius: 90px;
-  padding-bottom: 15%;
+}
+
+.hero.active {
+  height:120vh;
 }
 
 .img-popup {
@@ -155,7 +157,7 @@ li.title-element + img {
 .hero-content {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .hero-title {
@@ -576,7 +578,7 @@ li.contact-item + li.contact-item {
 }
 
 .card {
-  min-height: 430px;
+  height: 450px;
   width: 335px;
   padding: 20px 35px;
   background: #36454f;
