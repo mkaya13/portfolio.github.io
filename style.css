@@ -15,7 +15,7 @@ ul.network-icons {
 }
 
 li .list-element + img {
-  margin-left:100px;
+  margin-left: 100px;
 }
 
 .email-letter-check + .contact-item {
@@ -52,11 +52,11 @@ a:link {
   background-size: 100% 80%;
   background-image: url("img/background-beginning-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 0 75px
+  background-position: 0 75px;
 }
 
 .hero.active {
-  height:135vh;
+  height: 135vh;
 }
 
 .img-popup {
