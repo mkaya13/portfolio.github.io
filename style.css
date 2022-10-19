@@ -14,6 +14,10 @@ ul.network-icons {
   padding-right: 5%;
 }
 
+li .list-element + img {
+  margin-left:100px;
+}
+
 .email-letter-check + .contact-item {
   margin-top: 2%;
 }
@@ -84,6 +88,10 @@ a:link {
 }
 
 li.title-element + img {
+  padding-left: 10px;
+}
+
+li.list-element + img {
   padding-left: 10px;
 }
 

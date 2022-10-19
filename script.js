@@ -130,9 +130,7 @@ for (let i = 0; i < cardContainer.length; i += 1) {
               ${title}
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-              
               ${subTitleUl.outerHTML}
-           
             </div>
             <div class="modal-header">
               <img class="img-popup" src="img/pro-${i + 1}.svg" alt=""> 
