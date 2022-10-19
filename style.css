@@ -52,7 +52,7 @@ a:link {
   background-size: 100% 80%;
   background-image: url("img/background-beginning-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 0 120px
+  background-position: 0 75px
 }
 
 .hero.active {
