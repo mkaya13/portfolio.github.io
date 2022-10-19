@@ -42,11 +42,10 @@ toggleButton.addEventListener('click', () => {
   backgroundColor.classList.toggle('active');
   hamburgerColor.classList.toggle('active');
   heroLogoColor.classList.toggle('active');
-  mainPage.classList.toggle('active')
-  console.log(mainPage.style)
+  mainPage.classList.toggle('active');
 
-  if(mainPage.style.height === "135vh") {
-    mainPage.classList.remove('active')
+  if (mainPage.style.height === '135vh') {
+    mainPage.classList.remove('active');
   }
 });
 
