@@ -4,7 +4,6 @@ const backgroundColor = document.getElementsByClassName('hero-nav')[0];
 const hamburgerColor = document.getElementsByClassName('bar')[0];
 const heroLogoColor = document.getElementsByClassName('hero-logo')[0];
 const emailLetterCheck = document.querySelector('#span-upper-case');
-const mainPage = document.querySelector('.hero');
 
 const cardContainer = [
   {
@@ -42,11 +41,6 @@ toggleButton.addEventListener('click', () => {
   backgroundColor.classList.toggle('active');
   hamburgerColor.classList.toggle('active');
   heroLogoColor.classList.toggle('active');
-  mainPage.classList.toggle('active');
-
-  if (mainPage.style.height === '135vh') {
-    mainPage.classList.remove('active');
-  }
 });
 
 document.querySelectorAll('.navbar-links').forEach((n) => {
