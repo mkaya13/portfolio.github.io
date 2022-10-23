@@ -47,7 +47,6 @@ a:link {
 }
 
 .hero {
-  height: 100vh;
   background: white;
   background-size: 100% 80%;
   background-image: url("img/background-beginning-mobile.svg");
@@ -675,11 +674,21 @@ h5 {
   .hero-logo.active {
     color: white;
   }
+
+  .network-icons {
+    padding-bottom: 30%;
+  }
+
+  .project-images {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
   ul.network-icons {
     padding-left: 22.4%;
+    padding-bottom: 18%;
   }
 
   .right-side-picture {
@@ -698,8 +707,6 @@ h5 {
   }
 
   .hero {
-    min-height: 100vh;
-    max-height: 90vh;
     width: 100%;
     background-size: 100% 80%;
     background-image: url("img/background-beginning-desktop.svg");
