@@ -361,11 +361,10 @@ button:hover {
   background: white;
   border-top-right-radius: 90px;
   width: 100%;
-  min-height: 100vh;
   padding-top: 30px;
-  padding-bottom: 200px;
   padding-left: 5%;
   padding-right: 5%;
+  min-height: 100vh;
 }
 
 .about-title {
@@ -937,13 +936,15 @@ h5 {
 
   .left-side-about-content {
     float: left;
-    width: 40%;
+    display: inline-block;
+    width: 45%;
     height: 100%;
     margin-left: 5%;
   }
 
   .right-side-about-content {
     float: right;
+    display: inline-block;
     width: 50%;
     height: 100%;
   }
@@ -985,6 +986,11 @@ h5 {
     padding-left: 0;
     padding-right: 5%;
     padding-bottom: 200px;
+    min-height: 100vh;
+  }
+
+  .all-about {
+    margin-bottom: 600px;
   }
 
   .contact-me-section {
