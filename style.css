@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   box-sizing: border-box;
 }
@@ -49,7 +49,7 @@ a:link {
 .hero {
   background: white;
   background-size: 100% 80%;
-  background-image: url("img/background-beginning-mobile.svg");
+  background-image: url('img/background-beginning-mobile.svg');
   background-repeat: no-repeat;
   background-position: 0 75px;
 }
@@ -477,7 +477,7 @@ li.tech-title-size-2 {
   border-top-left-radius: 90px;
   padding-bottom: 40px;
   background-size: 100% 100%;
-  background-image: url("img/background-contact-mobile.svg");
+  background-image: url('img/background-contact-mobile.svg');
   background-repeat: no-repeat;
   background-position: 82px 4px;
 }
@@ -682,6 +682,11 @@ h5 {
     display: flex;
     justify-content: center;
   }
+
+  .project-images img {
+    width: 250px;
+    height: 170px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -708,7 +713,7 @@ h5 {
   .hero {
     width: 100%;
     background-size: 100% 80%;
-    background-image: url("img/background-beginning-desktop.svg");
+    background-image: url('img/background-beginning-desktop.svg');
     background-repeat: no-repeat;
     background-position: 0 80px;
   }
@@ -858,7 +863,7 @@ h5 {
   }
 
   .animation-container .ring::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 12px;
     left: 12px;
@@ -866,12 +871,8 @@ h5 {
     width: 15px;
     height: 15px;
     background: #24ecff;
-    box-shadow:
-      0 0 0 5px #24ecff53,
-      0 0 0 10px #24ecff22,
-      0 0 0 20px #24ecff11,
-      0 0 20px #24ecff,
-      0 0 20px #24ecff;
+    box-shadow: 0 0 0 5px #24ecff53, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11,
+      0 0 20px #24ecff, 0 0 20px #24ecff;
   }
 
   .animation-container .ring:nth-child(2) {
@@ -882,7 +883,7 @@ h5 {
   }
 
   .animation-container .ring:nth-child(2)::before {
-    content: "";
+    content: '';
     position: absolute;
     top: initial;
     bottom: 12px;
@@ -891,12 +892,8 @@ h5 {
     width: 15px;
     height: 15px;
     background: #93ff2d;
-    box-shadow:
-      0 0 0 5px #93ff2d53,
-      0 0 0 10px #93ff2d22,
-      0 0 0 20px #93ff2d11,
-      0 0 20px #93ff2d,
-      0 0 20px #93ff2d;
+    box-shadow: 0 0 0 5px #93ff2d53, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11,
+      0 0 20px #93ff2d, 0 0 20px #93ff2d;
   }
 
   @keyframes animate2 {
@@ -917,7 +914,7 @@ h5 {
   }
 
   .animation-container .ring:nth-child(3)::before {
-    content: "";
+    content: '';
     position: absolute;
     top: initial;
     bottom: 12px;
@@ -926,12 +923,8 @@ h5 {
     width: 15px;
     height: 15px;
     background: #e41cf8;
-    box-shadow:
-      0 0 0 5px #e41cf853,
-      0 0 0 10px #e41cf822,
-      0 0 0 20px #e41cf811,
-      0 0 20px #e41cf8,
-      0 0 20px #e41cf8;
+    box-shadow: 0 0 0 5px #e41cf853, 0 0 0 10px #e41cf822, 0 0 0 20px #e41cf811,
+      0 0 20px #e41cf8, 0 0 20px #e41cf8;
   }
 
   .left-side-about-content {
@@ -994,6 +987,6 @@ h5 {
   }
 
   .contact-me-section {
-    background-image: url("img/background-contact-desktop.svg");
+    background-image: url('img/background-contact-desktop.svg');
   }
 }

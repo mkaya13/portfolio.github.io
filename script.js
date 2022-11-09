@@ -7,31 +7,43 @@ const emailLetterCheck = document.querySelector('#span-upper-case');
 
 const cardContainer = [
   {
-    title: 'Facebook 360',
-    SubTitle: ['FACEBOOK', 'Full Stack Dev', 2015],
-    text: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    title: 'SmartBuild',
+    SubTitle: ['MICROVERSE', 'Web Development', 2022],
+    text: 'SmartBuild conference website that includes information about event content, sections that the event offers and speakers that will be joining, for SmartBuild event.',
+    img: 'SmartBuild.png',
     languages: ['html', 'css', 'js'],
+    seeLive: 'https://mkaya13.github.io/SmartBuildConference/',
+    seeSource: 'https://github.com/mkaya13/SmartBuildConference',
   },
 
   {
     title: 'Uber Navigation',
     SubTitle: ['UBER', 'Lead Developer', 2018],
     text: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    img: 'ToDoList.png',
     languages: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://mkaya13.github.io/todolist-with-webpack/dist/index.html',
+    seeSource: 'https://github.com/mkaya13/todolist-with-webpack',
   },
 
   {
     title: 'Tonic',
     SubTitle: ['Canopy', 'Back End Dev', 2015],
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    img: 'pro-3.svg',
     languages: ['html', 'css', 'javascript'],
+    seeLive: '',
+    seeSource: '',
   },
 
   {
     title: 'Multi-Post Stories',
     SubTitle: ['FACEBOOK', 'Full Stack Dev', 2015],
     text: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    img: 'pro-4.svg',
     languages: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: '',
+    seeSource: '',
   },
 ];
 
@@ -54,7 +66,10 @@ document.querySelectorAll('.navbar-links').forEach((n) => {
 });
 
 let p;
+let img;
 let title;
+let seeLive;
+let seeSource;
 let subTitle;
 let text;
 let tech;
@@ -69,6 +84,10 @@ for (let i = 0; i < cardContainer.length; i += 1) {
   title.classList.add('project-content-2');
   title.textContent = cardContainer[i].title;
   title = title.outerHTML;
+
+  img = cardContainer[i].img;
+  seeLive = cardContainer[i].seeLive;
+  seeSource = cardContainer[i].seeSource;
 
   text = document.createElement('p');
   text.classList.add('project-content-4');
@@ -126,7 +145,7 @@ for (let i = 0; i < cardContainer.length; i += 1) {
               ${subTitleUl.outerHTML}
             </div>
             <div class="modal-header">
-              <img class="img-popup" src="img/pro-${i + 1}.svg" alt=""> 
+              <img class="img-popup" src="img/${img}" alt=""> 
             </div>
             <div class="modal-header">
               <div style="padding-left:12px;">
@@ -136,12 +155,12 @@ for (let i = 0; i < cardContainer.length; i += 1) {
             </div>
             <div class="modal-header" style="display:flex; justify-content:center; align-content:center" >
               <button class="button-class">
-                <a href="https://github.com/" target="_blank">
+                <a href=${seeLive} target="_blank">
                   See Live <img style ="margin-bottom:3px; height:22px; width:22px;"src="img/live-icon.svg" alt="">
                 </a>
               </button>
               <button class="button-class">
-                <a href="https://github.com/" target="_blank">
+                <a href=${seeSource} target="_blank">
                   See Source <img style ="margin-bottom:3px; height:22px; width:22px;"src="img/github-icon.svg" alt="">
                 </a>
               </button>
