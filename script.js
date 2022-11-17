@@ -7,6 +7,15 @@ const emailLetterCheck = document.querySelector('#span-upper-case');
 
 const cardContainer = [
   {
+    title: 'Leaderboard Ranking',
+    SubTitle: ['MICROVERSE', 'Web Development', 2022],
+    text: 'Leaderboard project lets you create an API endpoint with a POST request to an API with node.js, populate the created API endpoint with a post request through user interface form, and send a get request with refresh button to see the data stored in the API.',
+    img: 'leaderboard.png',
+    languages: ['html', 'css', 'js'],
+    seeLive: 'https://mkaya13.github.io/leaderboard-project/dist/index.html',
+    seeSource: 'https://github.com/mkaya13/leaderboard-project',
+  },
+  {
     title: 'SmartBuild',
     SubTitle: ['MICROVERSE', 'Web Development', 2022],
     text: 'SmartBuild conference website that includes information about event content, sections that the event offers and speakers that will be joining, for SmartBuild event.',
@@ -17,8 +26,8 @@ const cardContainer = [
   },
 
   {
-    title: 'Uber Navigation',
-    SubTitle: ['UBER', 'Lead Developer', 2018],
+    title: 'Todo List',
+    SubTitle: ['MICROVERSE', 'Web Development', 2022],
     text: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     img: 'ToDoList.png',
     languages: ['html', 'css', 'javascript', 'ruby on rails'],
@@ -32,16 +41,6 @@ const cardContainer = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     img: 'pro-3.svg',
     languages: ['html', 'css', 'javascript'],
-    seeLive: '',
-    seeSource: '',
-  },
-
-  {
-    title: 'Multi-Post Stories',
-    SubTitle: ['FACEBOOK', 'Full Stack Dev', 2015],
-    text: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    img: 'pro-4.svg',
-    languages: ['html', 'css', 'javascript', 'ruby on rails'],
     seeLive: '',
     seeSource: '',
   },
