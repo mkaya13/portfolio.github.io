@@ -86,6 +86,14 @@ a:link {
   margin-left: 0;
 }
 
+.card-u-list li ::before {
+  content: '>';
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 li.title-element + img {
   padding-left: 10px;
 }
@@ -336,7 +344,12 @@ li.languages-list + li.languages-list {
 }
 
 .language-names-mobil {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   padding-left: 40px;
+  padding-top: 15px;
 }
 
 button {
@@ -419,10 +432,19 @@ ul.about-network-icons li {
   box-shadow: -2px 2px 0 black;
   margin-top: 3px;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .about-technologies {
   display: inline;
+}
+
+.about-frameworks {
+  display: none;
+}
+
+.about-tools {
+  display: none;
 }
 
 li.tech {
@@ -454,7 +476,6 @@ ul.tech-titles,
 li.tech-title-size-1,
 li.tech-title-size-2 {
   margin: 0;
-  padding-left: 12px;
   list-style-type: none;
   padding-top: 5%;
 }
@@ -467,6 +488,7 @@ li.tech-title-size-2 {
   box-shadow: -2px 2px 0 black;
   margin-top: 6px;
   transform: rotate(-135deg);
+  cursor: pointer;
 }
 
 .contact-me-section {
@@ -562,7 +584,7 @@ li.contact-item + li.contact-item {
 }
 
 .interests-section {
-  background: linear-gradient(rgb(8, 2, 70) 0%, rgb(18, 4, 70) 146.21%);
+  background: linear-gradient(rgb(30, 2, 70) 0%, rgb(18, 4, 70) 146.21%);
   width: 100%;
   padding: 40px 0;
   border-top-right-radius: 60px;
@@ -581,19 +603,6 @@ li.contact-item + li.contact-item {
   justify-content: center;
   align-items: center;
   min-height: 400px;
-}
-
-.card {
-  height: 450px;
-  width: 335px;
-  padding: 20px 35px;
-  background: #36454f;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
 }
 
 .card i {
@@ -687,6 +696,29 @@ h5 {
     width: 250px;
     height: 170px;
   }
+
+  .about-me {
+    background: white;
+    border-top-right-radius: 90px;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 100vh;
+  }
+
+  .card {
+    height: 750px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #36454f;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
@@ -731,6 +763,16 @@ h5 {
     flex-wrap: wrap;
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+
+  .about-frameworks li {
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  .about-tools li {
+    display: none;
+    flex-wrap: wrap;
   }
 
   .hero-nav ul li {
@@ -947,6 +989,16 @@ h5 {
     flex-wrap: wrap;
   }
 
+  .about-frameworks {
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  .about-tools {
+    display: none;
+    flex-wrap: wrap;
+  }
+
   .mobile-rectangle {
     width: 152px;
     height: 120px;
@@ -963,6 +1015,7 @@ h5 {
     font-size: 15px;
     line-height: 20px;
     padding-left: 10px;
+    padding-top: 15px;
   }
 
   .contact-hr {
@@ -975,18 +1028,24 @@ h5 {
     gap: 50%;
   }
 
-  .about-me {
-    padding-left: 0;
-    padding-right: 5%;
-    padding-bottom: 200px;
-    min-height: 100vh;
-  }
-
   .all-about {
     margin-bottom: 600px;
   }
 
   .contact-me-section {
     background-image: url('img/background-contact-desktop.svg');
+  }
+
+  .card {
+    height: 500px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #36454f;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
   }
 }
