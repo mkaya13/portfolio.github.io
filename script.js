@@ -16,13 +16,13 @@ const cardContainer = [
     seeSource: 'https://github.com/mkaya13/movie_app',
   },
   {
-    title: 'SmartBuild',
+    title: 'Space Travelers',
     SubTitle: ['MICROVERSE', 'Web Development', 2022],
-    text: 'SmartBuild conference website that includes information about event content, sections that the event offers and speakers that will be joining, for SmartBuild event.',
-    img: 'SmartBuild.png',
-    languages: ['html', 'css', 'js'],
-    seeLive: 'https://mkaya13.github.io/SmartBuildConference/',
-    seeSource: 'https://github.com/mkaya13/SmartBuildConference',
+    text: 'Space Travellers is a website for a company that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions.',
+    img: 'SpaceTravelers.png',
+    languages: ['html', 'css', 'js', 'jest', 'api', 'react.js', 'redux', 'bootstrap'],
+    seeLive: 'https://space-travellers-rockets-and-missions.onrender.com/',
+    seeSource: 'https://github.com/ginabeki/space-travellers',
   },
 
   {
@@ -78,7 +78,6 @@ const fillPages = () => {
       subTitle.appendChild(SubTitleCounter);
       subTitle.textContent = cardContainer[i].SubTitle[k];
 
-      subTitleUl.style = 'margin-left:15px;';
       SubTitleCounter.style = 'padding-right:10px;';
 
       if (counter === 0) {
@@ -272,68 +271,52 @@ document.querySelectorAll('.navbar-links').forEach((n) => {
 
 // Languages Tech
 
-const languages = document.querySelector('.bottom.languages-tech');
-const aboutTech = document.querySelector('.about-technologies');
+const languagesArrow = document.querySelector('.bottom.languages-tech');
+const aboutTech = document.querySelectorAll('.about-technologies')[0];
 
-languages.addEventListener('click', (event) => {
+languagesArrow.addEventListener('click', (event) => {
   event.preventDefault();
 
-  if (languages.className === 'bottom languages-tech') {
-    languages.className = 'right';
+  if (languagesArrow.className === 'bottom languages-tech') {
+    languagesArrow.className = 'right';
     aboutTech.style = 'display:none;';
   } else {
-    languages.className = 'bottom languages-tech';
+    languagesArrow.className = 'bottom languages-tech';
     aboutTech.style = 'display: flex; flex-wrap: wrap; gap: 20px 0;';
   }
 });
 
 // Frameworks
 
-const aboutMePage = document.querySelector('.about-me');
-const frameworks = document.querySelector('.right.frameworks-tech');
-const aboutFrameworks = document.querySelector('.about-frameworks');
-const aboutFrameworksLi = document.querySelectorAll(
-  '.tech.mobile-rectangle.framework',
-);
+const frameworkArrow = document.querySelectorAll('.bottom.languages-tech')[1];
+const aboutFrameworks = document.querySelectorAll('.about-technologies')[1];
 
-frameworks.addEventListener('click', (event) => {
+frameworkArrow.addEventListener('click', (event) => {
   event.preventDefault();
 
-  if (frameworks.className === 'right frameworks-tech') {
-    frameworks.className = 'bottom';
-    aboutFrameworks.style = 'display:flex; flex-wrap: wrap; gap: 20px 5px;';
-    aboutMePage.style.minHeight = '130vh';
-    for (let i = 0; i < aboutFrameworksLi.length; i += 1) {
-      aboutFrameworksLi[i].style = 'display:flex;';
-    }
+  if (frameworkArrow.className === 'bottom languages-tech') {
+    frameworkArrow.className = 'right';
+    aboutFrameworks.style = 'display:none;';
   } else {
-    frameworks.className = 'right frameworks-tech';
-    aboutFrameworks.style = 'display:none';
+    frameworkArrow.className = 'bottom languages-tech';
+    aboutFrameworks.style = 'display: flex; flex-wrap: wrap; gap: 20px 0;';
   }
 });
 
 // Tools
 
-const tools = document.querySelector('.right.tools-tech');
-const aboutTools = document.querySelector('.about-tools');
-const aboutToolsLi = document.querySelectorAll(
-  '.tech.mobile-rectangle.tools',
-);
+const toolsArrow = document.querySelectorAll('.bottom.languages-tech')[2];
+const aboutTools = document.querySelectorAll('.about-technologies')[2];
 
-tools.addEventListener('click', (event) => {
+toolsArrow.addEventListener('click', (event) => {
   event.preventDefault();
 
-  if (tools.className === 'right tools-tech') {
-    tools.className = 'bottom';
-    aboutTools.style = 'display:flex; flex-wrap: wrap; gap: 20px 5px; padding-bottom: 50px;';
-    aboutMePage.style.minHeight = '130vh';
-    for (let i = 0; i < aboutToolsLi.length; i += 1) {
-      aboutToolsLi[i].style = 'display:flex;';
-    }
+  if (toolsArrow.className === 'bottom languages-tech') {
+    toolsArrow.className = 'right';
+    aboutTools.style = 'display:none;';
   } else {
-    tools.className = 'right tools-tech';
-    aboutTools.style = 'display:none';
-    aboutMePage.style.minHeight = '110vh';
+    toolsArrow.className = 'bottom languages-tech';
+    aboutTools.style = 'display: flex; flex-wrap: wrap; gap: 20px 0;';
   }
 });
 
