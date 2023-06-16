@@ -65,6 +65,11 @@ a:link {
 
 .hero-nav {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  display: flex;
   padding: 4%;
   padding-top: 5%;
 }
@@ -87,8 +92,8 @@ a:link {
 }
 
 .card-u-list li ::before {
-  content: '>';
-  color: black;
+  content: '*';
+  color: purple;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -642,6 +647,16 @@ h5 {
   text-align: center;
 }
 
+.my-logo {
+  width: 6rem;
+  height: 3.5rem;
+}
+
+.title-and-animation {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 768px) {
   .hero-nav ul li a {
     font-weight: 600;
@@ -861,7 +876,6 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 35%;
     padding-top: 2%;
   }
 
