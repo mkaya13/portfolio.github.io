@@ -36,13 +36,13 @@ const cardContainer = [
   },
 
   {
-    title: 'Tonic',
-    SubTitle: ['Canopy', 'Back End Dev', 2015],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    img: 'pro-3.svg',
-    languages: ['html', 'css', 'javascript'],
-    seeLive: '',
-    seeSource: '',
+    title: 'Budget Application',
+    SubTitle: ['MICROVERSE', 'Full Stack Dev', 2023],
+    text: 'A budget application that has authentication and authorization mechanisms, a PostgreSQL db that holds user data and makes it possible to fill sections and shows details in a dashboard.',
+    img: 'BudgetApp.png',
+    languages: ['html', 'css', 'javascript', 'ruby-on-rails'],
+    seeLive: 'https://budget-application-h4ld.onrender.com/',
+    seeSource: 'https://github.com/mkaya13/budget-app-rails',
   },
 ];
 
